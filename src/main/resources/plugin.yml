@@ -1,0 +1,5 @@
+name: "ThirParAuth"
+main: "com.likeitsmp.thirparauth.ThirparauthPlugin"
+version: '6.0'
+api-version: '1.20'
+author: ooneequeue
