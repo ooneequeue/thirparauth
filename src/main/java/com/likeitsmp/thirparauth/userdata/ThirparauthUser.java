@@ -4,6 +4,10 @@ import java.net.InetAddress;
 
 public final class ThirparauthUser
 {
+    public ThirparauthUser(String password)
+    {
+        throw new UnsupportedOperationException("Unimplemented method 'new ThirparauthUser'");
+    }
 
     public boolean isEnabled()
     {

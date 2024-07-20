@@ -10,7 +10,7 @@ public final class ThirparauthPlugin extends JavaPlugin
     @Override
     public void onEnable()
     {
-        var userDatabase = new ThirparauthUserDatabase();
+        var userDatabase = new ThirparauthUserDatabase(this);
         new UserAuthProcessInitiator(this, userDatabase);
     }
 }
