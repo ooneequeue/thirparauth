@@ -1,11 +1,13 @@
 package com.likeitsmp.util.event;
 
+import org.bukkit.Bukkit;
+import org.bukkit.event.Listener;
 import org.bukkit.plugin.Plugin;
 
-public abstract class AutoListener
+public abstract class AutoListener implements Listener
 {
     public AutoListener(Plugin plugin)
     {
-        throw new UnsupportedOperationException("Unimplemented method 'new AutoListener'");
+        Bukkit.getPluginManager().registerEvents(this, plugin);
     }
 }
