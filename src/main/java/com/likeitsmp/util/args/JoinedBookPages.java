@@ -4,8 +4,15 @@ import org.bukkit.inventory.meta.BookMeta;
 
 public final class JoinedBookPages
 {
-    public static String of(BookMeta bookMeta)
+    private static final String PAGE_DELIMITER = "\n\n\n\f\f\f\n\n\n";
+
+    public static String of(BookMeta book)
     {
-        throw new UnsupportedOperationException("Unimplemented method 'of'");
+        var pages = book.getPages();
+        return String.join(PAGE_DELIMITER, pages);
+    }
+
+    private JoinedBookPages()
+    {
     }
 }
